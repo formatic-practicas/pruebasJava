@@ -1,4 +1,4 @@
-package pruebasDeJava;
+package pruebasJava;
 
 public class Dani {
 
