@@ -1,13 +1,13 @@
 package pruebasJava;
 import java.awt.EventQueue;
-import java.awt.event.ActionEvent;
-import java.awt.event.ActionListener;
 
+import javax.swing.JFrame;
 import javax.swing.GroupLayout;
 import javax.swing.GroupLayout.Alignment;
 import javax.swing.JButton;
-import javax.swing.JFrame;
 import javax.swing.JTextField;
+import java.awt.event.ActionListener;
+import java.awt.event.ActionEvent;
 
 
 public class ventanaJoseCarlos {
@@ -51,7 +51,8 @@ public class ventanaJoseCarlos {
 		btnNewButton.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent arg0) {
 				textField.setText("Hola a todos");
-				textField.setText("sorpresa");
+				textField_1.setText("sorpresa");
+				textField_1.isVisible();
 				
 			}
 		});
