@@ -1,4 +1,4 @@
-<pruebasJava>
+pruebasJava
 <Buenos días a todos.>
 <Vamos a empezar.>
 <Dani hizo la pole>
