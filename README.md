@@ -1,6 +1,6 @@
 pruebasJava
-<Buenos días a todos.>
-<Vamos a empezar.>
+#Buenos días a todos.>
+//Vamos a empezar.>
 <Dani hizo la pole>
 <Dani era el que tenia la version correcta y volvió a subir - 2º>
 <Manuela hizo un meritorio tercer puesto>
