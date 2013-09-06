@@ -18,6 +18,10 @@ Diego 2
 Vamos entendiendo este rollo by Jose antonio
 Anxo
 Sonreí, bogart no cede contra gobiernos
-
-
-
+Diego 2 modificado
+Vamos entendiendo este rollo
+Vamos entendiendo este rollo by Jose antonio
+Anxo
+Es viernes y nos vamos 
+dsdsdsdsdsdsdsdsd
+Sonreí, bogart no cede contra gobiernos
