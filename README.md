@@ -35,8 +35,4 @@ Anxo
 Es viernes y nos vamos 
 dsdsdsdsdsdsdsdsd
 Sonreí, bogart no cede contra gobiernos
-<<<<<<< HEAD
-
-=======
 http://www.ceautomatica.es/old/actividades/jornadas/XXV/documentos/64-miciasnime.pdf
->>>>>>> branch 'master' of https://github.com/formatic-practicas/pruebasJava.git
