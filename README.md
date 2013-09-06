@@ -3,7 +3,7 @@ Buenos días a todos.
 Vamos a empezar.
 Primera version
 revision a la revision de la primera version.
-Josito Rodriguez Sampayo 
+Jose Antonio Rodriguez Sampayo Segunda Version de este programa
 Dani
 Dani2.
 Manuela.
