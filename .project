@@ -1,6 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <projectDescription>
+<<<<<<< HEAD
 	<name>pruebasJava</name>
+=======
+	<name>PruebasJava</name>
+>>>>>>> branch 'master' of https://github.com/formatic-practicas/pruebasJava.git
 	<comment></comment>
 	<projects>
 	</projects>
