@@ -1,4 +1,4 @@
-package pruebasJava;
+package manuela;
 
 public class Manuela {
 	
