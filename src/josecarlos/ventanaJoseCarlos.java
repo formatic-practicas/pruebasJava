@@ -1,3 +1,4 @@
+package josecarlos;
 import java.awt.EventQueue;
 
 import javax.swing.JFrame;
@@ -50,7 +51,8 @@ public class ventanaJoseCarlos {
 		btnNewButton.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent arg0) {
 				textField.setText("Hola a todos");
-				textField.setText("sorpresa");
+				textField_1.setText("sorpresa");
+				textField_1.isVisible();
 				
 			}
 		});
