@@ -2,6 +2,16 @@ pruebasJava
 Buenos días a todos.
 Vamos a empezar.
 Primera version
+revision a la revision de la primera version.
+Jose Antonio Rodriguez Sampayo Segunda Version de este programa
+Dani
+Dani2.
+Manuela.
+Elias.
+Otra vez Manuela.
+Jose Carlos by Dani
+Otra vez Elias Mourinho.
+Antonio Formatic.
 #Buenos días a todos.
 Vamos a empezar.>
 Dani hizo la pole>
@@ -27,3 +37,7 @@ dsdsdsdsdsdsdsdsd
 Sonreí, bogart no cede contra gobiernos
 http://www.ceautomatica.es/old/actividades/jornadas/XXV/documentos/64-miciasnime.pdf
 Soy Bartolo y esto funciona creo ya
+Xenxo tambien está.
+Yeah!
+jijijiji
+
