@@ -1,16 +1,16 @@
-package pruebasJava;
+package antonio;
 
 import java.awt.EventQueue;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
 
-import javax.swing.JFrame;
 import javax.swing.GroupLayout;
 import javax.swing.GroupLayout.Alignment;
 import javax.swing.JButton;
+import javax.swing.JFrame;
 import javax.swing.JTextField;
-import java.awt.event.ActionListener;
-import java.awt.event.ActionEvent;
 
-public class JoseAngelVentana {
+public class VentanaAntonio {
 
 	private JFrame frame;
 	private JTextField caja;
@@ -22,7 +22,7 @@ public class JoseAngelVentana {
 		EventQueue.invokeLater(new Runnable() {
 			public void run() {
 				try {
-					JoseAngelVentana window = new JoseAngelVentana();
+					VentanaAntonio window = new VentanaAntonio();
 					window.frame.setVisible(true);
 				} catch (Exception e) {
 					e.printStackTrace();
@@ -34,7 +34,7 @@ public class JoseAngelVentana {
 	/**
 	 * Create the application.
 	 */
-	public JoseAngelVentana() {
+	public VentanaAntonio() {
 		initialize();
 	}
 
@@ -46,8 +46,8 @@ public class JoseAngelVentana {
 		frame.setBounds(100, 100, 450, 300);
 		frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		
-		JButton btnPulsaAqui = new JButton("Pulsa aqui");
-		btnPulsaAqui.addActionListener(new ActionListener() {
+		JButton boton = new JButton("Pulsa aquí");
+		boton.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent arg0) {
 				caja.setText("Hola mundo");
 			}
@@ -59,23 +59,23 @@ public class JoseAngelVentana {
 		groupLayout.setHorizontalGroup(
 			groupLayout.createParallelGroup(Alignment.LEADING)
 				.addGroup(groupLayout.createSequentialGroup()
-					.addGap(87)
-					.addComponent(btnPulsaAqui)
-					.addGap(45)
+					.addGap(39)
+					.addComponent(boton)
+					.addGap(26)
 					.addComponent(caja, GroupLayout.PREFERRED_SIZE, GroupLayout.DEFAULT_SIZE, GroupLayout.PREFERRED_SIZE)
-					.addContainerGap(94, Short.MAX_VALUE))
+					.addContainerGap(161, Short.MAX_VALUE))
 		);
 		groupLayout.setVerticalGroup(
 			groupLayout.createParallelGroup(Alignment.LEADING)
 				.addGroup(groupLayout.createSequentialGroup()
 					.addGroup(groupLayout.createParallelGroup(Alignment.LEADING)
 						.addGroup(groupLayout.createSequentialGroup()
-							.addGap(89)
-							.addComponent(btnPulsaAqui))
+							.addGap(32)
+							.addComponent(boton))
 						.addGroup(groupLayout.createSequentialGroup()
-							.addGap(71)
+							.addGap(23)
 							.addComponent(caja, GroupLayout.PREFERRED_SIZE, GroupLayout.DEFAULT_SIZE, GroupLayout.PREFERRED_SIZE)))
-					.addContainerGap(156, Short.MAX_VALUE))
+					.addContainerGap(207, Short.MAX_VALUE))
 		);
 		frame.getContentPane().setLayout(groupLayout);
 	}
