@@ -1,4 +1,4 @@
-package pruebasJava;
+package manuela;
 
 import java.awt.EventQueue;
 import java.awt.event.ActionEvent;
@@ -8,12 +8,10 @@ import javax.swing.GroupLayout;
 import javax.swing.GroupLayout.Alignment;
 import javax.swing.JButton;
 import javax.swing.JFrame;
+import javax.swing.JLabel;
 import javax.swing.JTextField;
-import javax.swing.LayoutStyle.ComponentPlacement;
 
-
-
-public class ventanasJoseAntonio {
+public class ventanaManuela {
 
 	private JFrame frame;
 	private JTextField caja;
@@ -25,7 +23,7 @@ public class ventanasJoseAntonio {
 		EventQueue.invokeLater(new Runnable() {
 			public void run() {
 				try {
-					ventanasJoseAntonio window = new ventanasJoseAntonio();
+					ventanaManuela window = new ventanaManuela();
 					window.frame.setVisible(true);
 				} catch (Exception e) {
 					e.printStackTrace();
@@ -37,7 +35,7 @@ public class ventanasJoseAntonio {
 	/**
 	 * Create the application.
 	 */
-	public ventanasJoseAntonio() {
+	public ventanaManuela() {
 		initialize();
 	}
 
@@ -46,15 +44,17 @@ public class ventanasJoseAntonio {
 	 */
 	private void initialize() {
 		frame = new JFrame();
-		frame.setBounds(100, 100, 173, 160);
+		frame.setBounds(100, 100, 450, 300);
 		frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		
-		JButton boton = new JButton("Pulse Aqui");
+		JButton boton = new JButton("pulsa aquí");
 		boton.addActionListener(new ActionListener() {
-			public void actionPerformed(ActionEvent e) {
+			public void actionPerformed(ActionEvent arg0) {
 				caja.setText("hola mundo");
 			}
 		});
+		
+		JLabel lblNewLabel = new JLabel("New label");
 		
 		caja = new JTextField();
 		caja.setColumns(10);
@@ -62,20 +62,26 @@ public class ventanasJoseAntonio {
 		groupLayout.setHorizontalGroup(
 			groupLayout.createParallelGroup(Alignment.LEADING)
 				.addGroup(groupLayout.createSequentialGroup()
-					.addGap(40)
-					.addGroup(groupLayout.createParallelGroup(Alignment.LEADING)
-						.addComponent(boton)
-						.addComponent(caja, GroupLayout.PREFERRED_SIZE, GroupLayout.DEFAULT_SIZE, GroupLayout.PREFERRED_SIZE))
-					.addContainerGap(294, Short.MAX_VALUE))
+					.addGap(30)
+					.addComponent(lblNewLabel)
+					.addContainerGap(348, Short.MAX_VALUE))
+				.addGroup(Alignment.TRAILING, groupLayout.createSequentialGroup()
+					.addContainerGap(171, Short.MAX_VALUE)
+					.addGroup(groupLayout.createParallelGroup(Alignment.TRAILING)
+						.addComponent(caja, GroupLayout.PREFERRED_SIZE, GroupLayout.DEFAULT_SIZE, GroupLayout.PREFERRED_SIZE)
+						.addComponent(boton))
+					.addGap(160))
 		);
 		groupLayout.setVerticalGroup(
 			groupLayout.createParallelGroup(Alignment.LEADING)
 				.addGroup(groupLayout.createSequentialGroup()
-					.addGap(51)
-					.addComponent(caja, GroupLayout.PREFERRED_SIZE, GroupLayout.DEFAULT_SIZE, GroupLayout.PREFERRED_SIZE)
-					.addPreferredGap(ComponentPlacement.RELATED)
+					.addGap(64)
+					.addComponent(lblNewLabel)
+					.addGap(35)
 					.addComponent(boton)
-					.addContainerGap(170, Short.MAX_VALUE))
+					.addGap(45)
+					.addComponent(caja, GroupLayout.PREFERRED_SIZE, GroupLayout.DEFAULT_SIZE, GroupLayout.PREFERRED_SIZE)
+					.addContainerGap(61, Short.MAX_VALUE))
 		);
 		frame.getContentPane().setLayout(groupLayout);
 	}
