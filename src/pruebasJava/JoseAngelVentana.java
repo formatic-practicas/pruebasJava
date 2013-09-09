@@ -1,3 +1,5 @@
+package pruebasJava;
+
 import java.awt.EventQueue;
 
 import javax.swing.JFrame;
@@ -5,16 +7,13 @@ import javax.swing.GroupLayout;
 import javax.swing.GroupLayout.Alignment;
 import javax.swing.JButton;
 import javax.swing.JTextField;
-import javax.swing.LayoutStyle.ComponentPlacement;
 import java.awt.event.ActionListener;
 import java.awt.event.ActionEvent;
-import java.awt.Font;
 
-
-public class Anxo {
+public class JoseAngelVentana {
 
 	private JFrame frame;
-	private JTextField tf;
+	private JTextField caja;
 
 	/**
 	 * Launch the application.
@@ -23,7 +22,7 @@ public class Anxo {
 		EventQueue.invokeLater(new Runnable() {
 			public void run() {
 				try {
-					Anxo window = new Anxo();
+					JoseAngelVentana window = new JoseAngelVentana();
 					window.frame.setVisible(true);
 				} catch (Exception e) {
 					e.printStackTrace();
@@ -35,7 +34,7 @@ public class Anxo {
 	/**
 	 * Create the application.
 	 */
-	public Anxo() {
+	public JoseAngelVentana() {
 		initialize();
 	}
 
@@ -47,35 +46,36 @@ public class Anxo {
 		frame.setBounds(100, 100, 450, 300);
 		frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		
-		JButton btn = new JButton("No me toques");
-		btn.setFont(new Font("Dialog", Font.PLAIN, 10));
-		btn.addActionListener(new ActionListener() {
+		JButton btnPulsaAqui = new JButton("Pulsa aqui");
+		btnPulsaAqui.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent arg0) {
-				tf.setText("Te dije que no me tocaras ....");
+				caja.setText("Hola mundo");
 			}
 		});
 		
-		tf = new JTextField();
-		tf.setFont(new Font("Dialog", Font.PLAIN, 10));
-		tf.setColumns(10);
+		caja = new JTextField();
+		caja.setColumns(10);
 		GroupLayout groupLayout = new GroupLayout(frame.getContentPane());
 		groupLayout.setHorizontalGroup(
-			groupLayout.createParallelGroup(Alignment.TRAILING)
+			groupLayout.createParallelGroup(Alignment.LEADING)
 				.addGroup(groupLayout.createSequentialGroup()
-					.addContainerGap(77, Short.MAX_VALUE)
-					.addComponent(btn)
-					.addPreferredGap(ComponentPlacement.RELATED)
-					.addComponent(tf, GroupLayout.PREFERRED_SIZE, 221, GroupLayout.PREFERRED_SIZE)
-					.addContainerGap())
+					.addGap(87)
+					.addComponent(btnPulsaAqui)
+					.addGap(45)
+					.addComponent(caja, GroupLayout.PREFERRED_SIZE, GroupLayout.DEFAULT_SIZE, GroupLayout.PREFERRED_SIZE)
+					.addContainerGap(94, Short.MAX_VALUE))
 		);
 		groupLayout.setVerticalGroup(
-			groupLayout.createParallelGroup(Alignment.TRAILING)
+			groupLayout.createParallelGroup(Alignment.LEADING)
 				.addGroup(groupLayout.createSequentialGroup()
-					.addContainerGap(169, Short.MAX_VALUE)
-					.addGroup(groupLayout.createParallelGroup(Alignment.TRAILING, false)
-						.addComponent(tf, Alignment.LEADING)
-						.addComponent(btn, Alignment.LEADING, GroupLayout.DEFAULT_SIZE, GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-					.addGap(77))
+					.addGroup(groupLayout.createParallelGroup(Alignment.LEADING)
+						.addGroup(groupLayout.createSequentialGroup()
+							.addGap(89)
+							.addComponent(btnPulsaAqui))
+						.addGroup(groupLayout.createSequentialGroup()
+							.addGap(71)
+							.addComponent(caja, GroupLayout.PREFERRED_SIZE, GroupLayout.DEFAULT_SIZE, GroupLayout.PREFERRED_SIZE)))
+					.addContainerGap(156, Short.MAX_VALUE))
 		);
 		frame.getContentPane().setLayout(groupLayout);
 	}

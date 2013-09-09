@@ -1,3 +1,4 @@
+package josecarlos;
 import java.awt.EventQueue;
 
 import javax.swing.JFrame;
@@ -7,15 +8,13 @@ import javax.swing.JButton;
 import javax.swing.JTextField;
 import java.awt.event.ActionListener;
 import java.awt.event.ActionEvent;
-import javax.swing.JLabel;
-import javax.swing.LayoutStyle.ComponentPlacement;
 
 
 public class ventanaJoseCarlos {
 
 	private JFrame frame;
 	private JTextField textField;
-	JLabel etiqueta;
+	private JTextField textField_1;
 
 	/**
 	 * Launch the application.
@@ -52,27 +51,29 @@ public class ventanaJoseCarlos {
 		btnNewButton.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent arg0) {
 				textField.setText("Hola a todos");
-				etiqueta.setVisible(true);			
+				textField_1.setText("sorpresa");
+				textField_1.isVisible();
+				
 			}
 		});
 		
 		textField = new JTextField();
 		textField.setColumns(10);
 		
-		etiqueta = new JLabel("¡¡SORPRESA!!");
-		etiqueta.setVisible(false);
+		textField_1 = new JTextField();
+		textField_1.setVisible(false);
+		textField_1.setColumns(10);
 		GroupLayout groupLayout = new GroupLayout(frame.getContentPane());
 		groupLayout.setHorizontalGroup(
 			groupLayout.createParallelGroup(Alignment.TRAILING)
 				.addGroup(groupLayout.createSequentialGroup()
-					.addGap(158)
-					.addComponent(etiqueta)
-					.addContainerGap(197, Short.MAX_VALUE))
-				.addGroup(groupLayout.createSequentialGroup()
 					.addContainerGap(147, Short.MAX_VALUE)
-					.addComponent(textField, GroupLayout.PREFERRED_SIZE, GroupLayout.DEFAULT_SIZE, GroupLayout.PREFERRED_SIZE)
-					.addGap(65)
-					.addComponent(btnNewButton)
+					.addGroup(groupLayout.createParallelGroup(Alignment.LEADING)
+						.addComponent(textField_1, GroupLayout.PREFERRED_SIZE, GroupLayout.DEFAULT_SIZE, GroupLayout.PREFERRED_SIZE)
+						.addGroup(groupLayout.createSequentialGroup()
+							.addComponent(textField, GroupLayout.PREFERRED_SIZE, GroupLayout.DEFAULT_SIZE, GroupLayout.PREFERRED_SIZE)
+							.addGap(65)
+							.addComponent(btnNewButton)))
 					.addGap(69))
 		);
 		groupLayout.setVerticalGroup(
@@ -82,9 +83,9 @@ public class ventanaJoseCarlos {
 					.addGroup(groupLayout.createParallelGroup(Alignment.BASELINE)
 						.addComponent(btnNewButton)
 						.addComponent(textField, GroupLayout.PREFERRED_SIZE, GroupLayout.DEFAULT_SIZE, GroupLayout.PREFERRED_SIZE))
-					.addGap(18)
-					.addComponent(etiqueta)
-					.addContainerGap(127, Short.MAX_VALUE))
+					.addGap(38)
+					.addComponent(textField_1, GroupLayout.PREFERRED_SIZE, GroupLayout.DEFAULT_SIZE, GroupLayout.PREFERRED_SIZE)
+					.addContainerGap(103, Short.MAX_VALUE))
 		);
 		frame.getContentPane().setLayout(groupLayout);
 	}
