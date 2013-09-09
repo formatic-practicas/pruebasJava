@@ -1,4 +1,4 @@
-package pruebasJava;
+package daniBabarro;
 import java.awt.EventQueue;
 
 import javax.swing.JFrame;

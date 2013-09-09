@@ -1,21 +1,21 @@
+package Xenxo;
+
 import java.awt.EventQueue;
 
 import javax.swing.JFrame;
 import javax.swing.GroupLayout;
 import javax.swing.GroupLayout.Alignment;
-import javax.swing.JButton;
 import javax.swing.JTextField;
+import javax.swing.JButton;
 import java.awt.event.ActionListener;
 import java.awt.event.ActionEvent;
-import javax.swing.JLabel;
+import javax.swing.JScrollBar;
 import javax.swing.LayoutStyle.ComponentPlacement;
 
-
-public class ventanaJoseCarlos {
+public class ventanaXenxo {
 
 	private JFrame frame;
 	private JTextField textField;
-	JLabel etiqueta;
 
 	/**
 	 * Launch the application.
@@ -24,7 +24,7 @@ public class ventanaJoseCarlos {
 		EventQueue.invokeLater(new Runnable() {
 			public void run() {
 				try {
-					ventanaJoseCarlos window = new ventanaJoseCarlos();
+					ventanaXenxo window = new ventanaXenxo();
 					window.frame.setVisible(true);
 				} catch (Exception e) {
 					e.printStackTrace();
@@ -36,7 +36,7 @@ public class ventanaJoseCarlos {
 	/**
 	 * Create the application.
 	 */
-	public ventanaJoseCarlos() {
+	public ventanaXenxo() {
 		initialize();
 	}
 
@@ -48,43 +48,42 @@ public class ventanaJoseCarlos {
 		frame.setBounds(100, 100, 450, 300);
 		frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		
-		JButton btnNewButton = new JButton("Ok");
-		btnNewButton.addActionListener(new ActionListener() {
-			public void actionPerformed(ActionEvent arg0) {
-				textField.setText("Hola a todos");
-				etiqueta.setVisible(true);			
-			}
-		});
-		
 		textField = new JTextField();
 		textField.setColumns(10);
 		
-		etiqueta = new JLabel("¡¡SORPRESA!!");
-		etiqueta.setVisible(false);
+		JButton btnPulsaAqui = new JButton("pulsa aqui");
+		btnPulsaAqui.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent arg0) {
+				textField.setText("Hola amigos");
+			}
+		});
+		
+		JScrollBar scrollBar = new JScrollBar();
 		GroupLayout groupLayout = new GroupLayout(frame.getContentPane());
 		groupLayout.setHorizontalGroup(
-			groupLayout.createParallelGroup(Alignment.TRAILING)
+			groupLayout.createParallelGroup(Alignment.LEADING)
 				.addGroup(groupLayout.createSequentialGroup()
-					.addGap(158)
-					.addComponent(etiqueta)
-					.addContainerGap(197, Short.MAX_VALUE))
-				.addGroup(groupLayout.createSequentialGroup()
-					.addContainerGap(147, Short.MAX_VALUE)
+					.addGap(48)
+					.addComponent(scrollBar, GroupLayout.PREFERRED_SIZE, GroupLayout.DEFAULT_SIZE, GroupLayout.PREFERRED_SIZE)
+					.addGap(32)
 					.addComponent(textField, GroupLayout.PREFERRED_SIZE, GroupLayout.DEFAULT_SIZE, GroupLayout.PREFERRED_SIZE)
-					.addGap(65)
-					.addComponent(btnNewButton)
-					.addGap(69))
+					.addGap(34)
+					.addComponent(btnPulsaAqui)
+					.addContainerGap(95, Short.MAX_VALUE))
 		);
 		groupLayout.setVerticalGroup(
 			groupLayout.createParallelGroup(Alignment.LEADING)
 				.addGroup(groupLayout.createSequentialGroup()
-					.addGap(86)
-					.addGroup(groupLayout.createParallelGroup(Alignment.BASELINE)
-						.addComponent(btnNewButton)
-						.addComponent(textField, GroupLayout.PREFERRED_SIZE, GroupLayout.DEFAULT_SIZE, GroupLayout.PREFERRED_SIZE))
-					.addGap(18)
-					.addComponent(etiqueta)
-					.addContainerGap(127, Short.MAX_VALUE))
+					.addGroup(groupLayout.createParallelGroup(Alignment.LEADING)
+						.addGroup(groupLayout.createSequentialGroup()
+							.addGap(107)
+							.addGroup(groupLayout.createParallelGroup(Alignment.LEADING)
+								.addComponent(btnPulsaAqui)
+								.addComponent(textField, GroupLayout.PREFERRED_SIZE, GroupLayout.DEFAULT_SIZE, GroupLayout.PREFERRED_SIZE)))
+						.addGroup(groupLayout.createSequentialGroup()
+							.addGap(87)
+							.addComponent(scrollBar, GroupLayout.PREFERRED_SIZE, GroupLayout.DEFAULT_SIZE, GroupLayout.PREFERRED_SIZE)))
+					.addContainerGap(123, Short.MAX_VALUE))
 		);
 		frame.getContentPane().setLayout(groupLayout);
 	}

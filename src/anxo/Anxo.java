@@ -1,4 +1,4 @@
-package pruebasJava;
+package anxo;
 
 public class Anxo {
 
