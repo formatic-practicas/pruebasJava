@@ -1,3 +1,4 @@
+package pruebasJava;
 import java.awt.EventQueue;
 
 import javax.swing.JFrame;
@@ -9,6 +10,7 @@ import javax.swing.LayoutStyle.ComponentPlacement;
 import java.awt.event.ActionListener;
 import java.awt.event.ActionEvent;
 import java.awt.Font;
+
 
 public class Anxo {
 
@@ -46,11 +48,11 @@ public class Anxo {
 		frame.setBounds(100, 100, 450, 300);
 		frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		
-		JButton btn = new JButton("Mi vecino se llama ... ");
+		JButton btn = new JButton("No me toques");
 		btn.setFont(new Font("Dialog", Font.PLAIN, 10));
 		btn.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent arg0) {
-				tf.setText("TOTORO !!!!....");
+				tf.setText("Te dije que no me tocaras ....");
 			}
 		});
 		
