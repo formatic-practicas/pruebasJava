@@ -1,4 +1,4 @@
-package pruebasJava;
+package JoseAntonio;
 
 public class JoseAntonioRodriguezSampayo {
 
