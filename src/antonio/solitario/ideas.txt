@@ -1,0 +1,19 @@
+
+
+Mazo
+	conjunto de Carta
+	Tamaño
+	
+Carta
+	posicion bocaArriba y bocaAbajo
+	color rojo y negro
+	palo diamantes, picas, trebol, corazones
+	numero 1 - 13
+	
+Palo
+	enum 
+Color 
+	enum
+Posicion
+	enum 
+	
