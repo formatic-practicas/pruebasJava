@@ -1,4 +1,4 @@
-package antonio.solitario;
+package JoseAntonio.solitario;
 
 public class Carta {
 	public Carta(int numero, Palo palo, Estado estado){
@@ -19,20 +19,7 @@ public class Carta {
 		this.palo = palo;
 	}
 	public Color getColor() {
-//		switch(palo){
-//		case DIAMANTES:
-//		case CORAZONES:
-//			return Color.ROJO;
-//		case PICAS:
-//		case TREBOL:
-//			return Color.NEGRO;	
-//		default:
-//			return Color.NEGRO;
-//		}
-//		if(palo == Palo.DIAMANTES || palo == Palo.CORAZONES){
-//			return Color.ROJO;
-//		}
-//		return Color.NEGRO;
+
 		return (palo == Palo.DIAMANTES|| palo == Palo.CORAZONES)?
 				Color.ROJO
 				:Color.NEGRO
