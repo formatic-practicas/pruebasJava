@@ -1,28 +1,31 @@
 package antonio.solitario;
 
 public class Carta {
+	public Carta(int numero, Palo palo){
+		this(numero, palo, Estado.BOCA_ABAJO);
+	}
 	public Carta(int numero, Palo palo, Estado estado){
 		this.numero=numero;
 		this.palo = palo;
 		this.estado = estado;
 	}
-	public String paloToString(){
-		switch(palo){
-		case DIAMANTES:
-			return "diamantes";
-		case PICAS:
-			return "picas";
-		case CORAZONES:
-			return "corazones";
-		case TREBOL:
-			return "trebol";
-		default:
-			return "ERROR";
-		}
-	}
+//	public String paloToString(){
+//		switch(palo){
+//		case DIAMANTES:
+//			return "diamantes";
+//		case PICAS:
+//			return "picas";
+//		case CORAZONES:
+//			return "corazones";
+//		case TREBOL:
+//			return "trebol";
+//		default:
+//			return "ERROR";
+//		}
+//	}
 	@Override
 	public String toString() {
-		return ""+numero + " de " + paloToString();
+		return ""+numero + " de " + getPalo();
 	}
 
 	public Estado getEstado(){

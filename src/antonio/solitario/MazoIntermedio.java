@@ -1,7 +1,13 @@
 package antonio.solitario;
 
 public class MazoIntermedio extends Mazo {
-
+	@Override
+	public String toString() {
+		if(estaVacio()){
+			return "[]";
+		}
+		return ""+getNumCartas()+ " cartas:"+ getUltimaCarta().toString();
+	}
 	@Override
 	public boolean agregarCarta(Carta carta) {
 		if (estaVacio()) {
