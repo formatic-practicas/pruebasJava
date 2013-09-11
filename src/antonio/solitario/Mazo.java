@@ -1,4 +1,4 @@
-package JoseAntonio.solitario;
+package antonio.solitario;
 
 public class Mazo implements PilaDeCartas {
 

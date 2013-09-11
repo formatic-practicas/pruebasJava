@@ -1,4 +1,4 @@
-package JoseAntonio.solitario;
+package antonio.solitario;
 
 public class MazoIntermedio extends Mazo {
 
@@ -16,6 +16,5 @@ public class MazoIntermedio extends Mazo {
 			}
 		}
 		return false;
-
 	}
 }
