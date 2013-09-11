@@ -31,9 +31,10 @@ public class Mazo implements PilaDeCartas {
 	}
 
 	@Override
-	public void agregarCarta(Carta carta){
+	public boolean agregarCarta(Carta carta){
 		cartas[numCartas] = carta;
 		numCartas++;
+		return true;
 	}
 
 	@Override

@@ -6,6 +6,25 @@ public class Carta {
 		this.palo = palo;
 		this.estado = estado;
 	}
+	public String paloToString(){
+		switch(palo){
+		case DIAMANTES:
+			return "diamantes";
+		case PICAS:
+			return "picas";
+		case CORAZONES:
+			return "corazones";
+		case TREBOL:
+			return "trebol";
+		default:
+			return "ERROR";
+		}
+	}
+	@Override
+	public String toString() {
+		return ""+numero + " de " + paloToString();
+	}
+
 	public Estado getEstado(){
 		return estado;
 	}

@@ -8,7 +8,7 @@ public interface PilaDeCartas {
 
 	public abstract Carta extraerCarta();
 
-	public abstract void agregarCarta(Carta carta);
+	public abstract boolean agregarCarta(Carta carta);
 
 	public abstract Carta getUltimaCarta();
 
