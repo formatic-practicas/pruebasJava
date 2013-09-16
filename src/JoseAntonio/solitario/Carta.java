@@ -1,19 +1,18 @@
 package JoseAntonio.solitario;
 
 public class Carta {
-	
-	public Carta(int numero,Palo palo){
-		this (numero,palo,Estado.BOCA_ABAJO);
+	public Carta(int numero, Palo palo){
+		this(numero, palo, Estado.BOCA_ABAJO);
 	}
 	public Carta(int numero, Palo palo, Estado estado){
 		this.numero=numero;
 		this.palo = palo;
 		this.estado = estado;
 	}
-	
+
 	@Override
 	public String toString() {
-		return ""+numero + " de " +getPalo();
+		return ""+numero + " de " + getPalo();
 	}
 
 	public Estado getEstado(){
@@ -30,9 +29,11 @@ public class Carta {
 	}
 	public Color getColor() {
 		return (palo == Palo.DIAMANTES|| palo == Palo.CORAZONES)?
-					Color.ROJO
-				   :Color.NEGRO;
-		}
+				Color.ROJO
+				:Color.NEGRO
+		;
+		
+	}
 	public int getNumero() {
 		return numero;
 	}

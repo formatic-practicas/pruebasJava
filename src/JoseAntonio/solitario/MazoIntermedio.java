@@ -1,13 +1,12 @@
 package JoseAntonio.solitario;
 
 public class MazoIntermedio extends Mazo {
-
 	@Override
 	public String toString() {
-		if (estaVacio()){
+		if(estaVacio()){
 			return "[]";
 		}
-		return ""+getNumCartas()+ " cartas "+getUltimaCarta().toString();
+		return ""+getNumCartas()+ " cartas:"+ getUltimaCarta().toString();
 	}
 	@Override
 	public boolean agregarCarta(Carta carta) {
@@ -23,6 +22,5 @@ public class MazoIntermedio extends Mazo {
 			}
 		}
 		return false;
-
 	}
 }
