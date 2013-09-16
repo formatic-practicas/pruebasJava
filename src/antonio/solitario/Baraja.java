@@ -16,4 +16,5 @@ public class Baraja extends Mazo {
 			}
 		}
 	}
+
 }
