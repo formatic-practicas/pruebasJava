@@ -15,6 +15,7 @@ public class Baraja extends Mazo {
 				agregarCarta(c);
 			}
 		}
+		barajar();
 	}
 
 }

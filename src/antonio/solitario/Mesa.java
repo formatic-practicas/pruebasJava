@@ -14,9 +14,34 @@ public class Mesa {
 		mazos[TipoMazo.FINAL4.ordinal()] = new MazoFinal();
 
 		mazos[TipoMazo.INTERMEDIO1.ordinal()] = new MazoIntermedio();
+		mazos[TipoMazo.INTERMEDIO1.ordinal()].agregarCarta(
+				mazos[TipoMazo.BARAJA.ordinal()].extraerCarta()
+				, true
+		); 
 		mazos[TipoMazo.INTERMEDIO2.ordinal()] = new MazoIntermedio();
-		mazos[TipoMazo.INTERMEDIO3.ordinal()] = new MazoIntermedio();
-		mazos[TipoMazo.INTERMEDIO4.ordinal()] = new MazoIntermedio();	
+		mazos[TipoMazo.INTERMEDIO2.ordinal()].agregarCarta(
+				mazos[TipoMazo.BARAJA.ordinal()].extraerCarta()
+				, true
+		);
+ 		mazos[TipoMazo.INTERMEDIO3.ordinal()] = new MazoIntermedio();
+		mazos[TipoMazo.INTERMEDIO3.ordinal()].agregarCarta(
+				mazos[TipoMazo.BARAJA.ordinal()].extraerCarta()
+				, true
+		);
+		mazos[TipoMazo.INTERMEDIO4.ordinal()] = new MazoIntermedio();
+		mazos[TipoMazo.INTERMEDIO4.ordinal()].agregarCarta(
+				mazos[TipoMazo.BARAJA.ordinal()].extraerCarta()
+				, true
+		); 
+	}
+	@Override
+	public String toString() {
+		String ret = "";
+		for(int n= 0; n< TipoMazo.values().length; n++){
+			ret+= mazos[n].toString();
+			ret+= "\n";
+		}
+		return ret;
 	}
 	boolean elegirMazoDesde(TipoMazo tipoMazo){
 		mazoDesde = tipoMazo;
