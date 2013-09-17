@@ -1,4 +1,4 @@
-package antonio.solitario;
+package JoseAntonio.solitario;
 
 import static org.junit.Assert.*;
 

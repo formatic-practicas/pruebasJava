@@ -1,4 +1,4 @@
-package antonio.solitario;
+package JoseAntonio.solitario;
 
 public enum Color {
 	ROJO, NEGRO
