@@ -18,7 +18,12 @@ public class Mazo implements PilaDeCartas {
 
 	@Override
 	public void barajar() {
-
+		for(int n=0; n<numCartas; n++){
+			int pos = (int)(Math.random()*numCartas);
+			Carta tmp = cartas[n];
+			cartas[n] = cartas[pos];
+			cartas[pos] = tmp;
+		}
 	}
 
 	@Override

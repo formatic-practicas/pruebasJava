@@ -16,19 +16,18 @@ public class Juego {
 
 	private void play() {
 		TipoMazo tipoMazo;
-		while (true) {			
+		while (true) {
 			do {
 				System.out.println(mesa.toString());
 				System.out.println("De qué mazo desea coger carta?");
 				int n = elegirMazo();
 				tipoMazo = TipoMazo.values()[n];
 			} while (!mesa.elegirMazoDesde(tipoMazo));
-			
-			do {
-				System.out.println("En qué mazo desea colocar la carta?");
-				int n = elegirMazo();
-				tipoMazo = TipoMazo.values()[n];
-			} while (!mesa.elegirMazoHasta(tipoMazo));
+
+			System.out.println("En qué mazo desea colocar la carta?");
+			int n = elegirMazo();
+			tipoMazo = TipoMazo.values()[n];
+			mesa.elegirMazoHasta(tipoMazo);
 		}
 	}
 

@@ -6,7 +6,7 @@ public class MazoIntermedio extends Mazo {
 		if(estaVacio()){
 			return "[]";
 		}
-		return ""+getNumCartas()+ " cartas:"+ getUltimaCarta().toString();
+		return ""+getNumCartas()+ " ["+ getUltimaCarta().toString()+"]";
 	}
 	@Override
 	public boolean agregarCarta(Carta carta) {

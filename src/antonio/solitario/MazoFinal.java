@@ -4,9 +4,9 @@ public class MazoFinal extends Mazo {
 	@Override
 	public String toString() {
 		if(estaVacio()){
-			return "[]";
+			return "()";
 		}
-		return getUltimaCarta().toString();
+		return "(" + getUltimaCarta().toString() + ")";
 	}
 	@Override
 	public boolean agregarCarta(Carta carta) {

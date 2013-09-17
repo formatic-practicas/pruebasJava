@@ -38,7 +38,7 @@ public class Mesa {
 	public String toString() {
 		String ret = "";
 		for(int n= 0; n< TipoMazo.values().length; n++){
-			ret+= mazos[n].toString();
+			ret+= n + ": "+ mazos[n].toString();
 			ret+= "\n";
 		}
 		return ret;

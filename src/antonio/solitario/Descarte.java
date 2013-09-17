@@ -4,8 +4,8 @@ public class Descarte extends Mazo {
 	@Override
 	public String toString() {
 		if(estaVacio()){
-			return "[]";
+			return "{}";
 		}
-		return getUltimaCarta().toString();
+		return "{"+ getUltimaCarta().toString()+"}";
 	}
 }
